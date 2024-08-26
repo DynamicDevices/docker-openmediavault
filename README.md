@@ -1,5 +1,11 @@
 [![](https://images.microbadger.com/badges/image/ikogan/openmediavault.svg)](https://microbadger.com/images/ikogan/openmediavault "Get your own image badge on microbadger.com") [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
+# TO BUILD FOR RPI USE THIS ON YOUR HOST SYSTEM
+
+```
+docker buildx build --platform=linux/arm/v7 --push -t your-organisation/openmediavault .
+```
+
 # FOR THIS FORK RUN
 
 ```
