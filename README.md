@@ -1,5 +1,11 @@
 [![](https://images.microbadger.com/badges/image/ikogan/openmediavault.svg)](https://microbadger.com/images/ikogan/openmediavault "Get your own image badge on microbadger.com") [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
+# FOR THIS FORK RUN
+
+```
+docker run --name OpenMediaVault -d -ti -h openmediavault.example.test -p 8100:80 -v /path/to/data:/data:Z -P dynamicdevices/openmediavault
+```
+
 # OpenMediaVault Docker Container
 
 Basic Docker container for OpenMediaVault primarily useful
