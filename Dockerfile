@@ -21,8 +21,11 @@ COPY defaults/rrdcached /etc/default
 # Add our startup script last because we don't want changes
 # to it to require a full container rebuild
 COPY omv-startup /usr/sbin/omv-startup
-COPY sleep.sh /usr/sbin/sleep.sh
 RUN chmod +x /usr/sbin/omv-startup
+COPY sleep.sh /usr/sbin/sleep.sh
+RUN chmod +x /usr/sbin/sleep.sh
+COPY fake-shared-folders.sh /usr/sbin/fake-shared-folders.sh
+RUN chmod +x /usr/sbin/fake-shared-folders.sh
 
 EXPOSE 8100:80 8443:443
 
